@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {% if title %}
+            <title>{{ title }}</title>
+        {% endif %}
+         <link rel="stylesheet" href="static/main.css?q=12805497802">      
+    </head>
+
+    <body>
+        <div>
+            <p>
+            <a href="/home">Home</a>
+            <a href="/maindishes">Main Dishes</a>
+            <a href="sides">Side Dishes</a>
+            </p>
+        </div>
+        <hr>
+
+        {% if heading %}
+            <h1>{{ heading }}</h1>
+        {% endif %}
+
+        <div>
+            {% block image %} {% endblock %}
+        </div>
+
+        <div class="recipenames">
+            <h2> {% block recipename1 %} {% endblock %}</h2>
+            <p> {% block info %} {% endblock %} </p>
+            <h3>Ingredients</h3>
+            <div class = "list">
+                {% block ul1 %}
+                {% endblock %}
+            </div>
+            <h3>Preparation</h3>
+            <div class="list">
+                {% block ol1 %}
+                {% endblock %}
+            </div>
+
+            <h2> {% block recipename2 %} {% endblock %}</h2>
+            <p> {% block info2 %} {% endblock %} </p>
+            <h3>Ingredients</h3>
+            <div class = "list">
+                {% block ul2 %}
+                {% endblock %}
+            </div>
+            <h3>Preparation</h3>
+            <div class="list">
+                {% block ol2 %}
+                {% endblock %}
+            </div>
+
+            <h2> {% block recipename3 %} {% endblock %}</h2>
+            <p> {% block info3 %} {% endblock %} </p>
+            <h3>Ingredients</h3>
+            <div class = "list">
+                {% block ul3 %}
+                {% endblock %}
+            </div>
+            <h3>Preparation</h3>
+            <div class="list">
+                {% block ol3 %}
+                {% endblock %}
+            </div>
+    </body>
+</html>

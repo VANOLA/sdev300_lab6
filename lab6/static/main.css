@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arimo&family=Libre+Baskerville&display=swap');
+
+html {
+    font-family: 'Arimo', sans-serif;
+    background-color: whitesmoke;
+}
+
+h1, h2 {
+    font-family: 'Libre Baskerville', serif; 
+    text-align: center;
+    font-size: 28px;
+    color: rgb(76, 129, 131);
+}
+
+h1{
+    font-size: 36px;
+}
+
+p {
+    font-family: 'Libre Baskerville', serif; 
+    text-align: center;
+    font-size: 20px;
+    color: rgb(70, 68, 68);
+}
+
+.list {
+    font-size: 18px;
+    color: rgb(29, 28, 28);
+}
+
+.image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
