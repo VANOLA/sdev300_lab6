@@ -1,44 +1,71 @@
-{% extends "layout.html" %}
+<!--
+    sides.html
+    By: Vanessa Arreola
+    November 25, 2021
+    SDEV 300
+  -->
 
+  <!-- Inherit layout from layout.html -->
+{% extends "layout.html" %} 
+
+<!-- Inserts image -->
 {% block image %} <img class="image" src="static/redcar.jpg" alt="Red Car"> {% endblock %}
 
-{% block recipename1 %} Moros y Cristianos (Black Beans and Rice) {% endblock %}
 
+<!-- Fill in all the blocks from layout.html for each recipe -->
+{% block recipename1 %} Moros y Cristianos (Black Beans and Rice) {% endblock %}
+<!-- recipe information -->
+{% block info %} This recipe is a delicious mix of black beans and rice. The rice absorbs the taste
+and color of the beans. This dish actually has a deep, cultural history. The dish is said to have 
+originated during the Moor's invasion of Spain, and later brought to Cuba via Spanish invaders. 
+I usually just call the dish black beans and rice, or congris (with grey).
+{% endblock %}
+<!-- Unordered list of ingredients -->
 {% block ul1 %}
 <ul>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
+    <li>1lb dried black beans, picked and rinsed well</li>
+    <li>1 green bell pepper, diced</li>
+    <li>1/2 large white onion, diced</li>
+    <li>4 garlic cloves, crushed</li>
+    <li>1T olive oil</li>
+    <li>1 dried bay leaf</li>
+    <li>1cup sofrito</li>
+    <li>2t salt</li>
+    <li>1t black pepper</li>
+    <li>1/2 t dried oregano</li>
+    <li>1/2 t ground cumin</li>
+    <li>2 cups extra long white rice</li>
 </ul> 
 {% endblock %}
-
+<!-- Ordered list of ingredients -->
 {% block ol1 %}
 <ol>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
+    <li>Soak the beans overnight with 10 cups of water. Add the next five ingredients to the 
+        beans and bring to a simmer over medium heat. Simmer until tender, and skim the foam 
+        that rises to the top, 45-60 min. Drain the beans and reserve 3 cups of cooking water.
+    </li>
+    <li>In the meantime, make the sofrito. Warm some olive oil in a pan and saute the sofrito until
+        fragrant, 3-5 min. Add the salt, pepper, oregano, and cumin and cook an additional 2 min.
+    </li>
+    <li>Add the sofrito to the pot with the beans and 3 cups of cooking water. Bring to a simmer over
+        medium heat. Add 2 cups o extra-long white rice. Simmer and then turn down to the lowest setting.
+        Cook covered untli the liquid is absorbed and the rice is tender, 20-30 min. Avoid lifting the lid.
+        Let the rice stand 15 min before serving.
+    </li>
 </ol>
 <hr>
 {% endblock %}
 
 
-
+<!-- recipe 2 -->
 {% block recipename2 %} Yucca con Mojo (Yucca with Garlic Creole Sauce) {% endblock %}
-
+<!-- recipe information -->
 {% block info2 %} This recipe features Yucca, a root that has been the chief root crop of 
 Cuba since the time of the indigenous Taino. This dish is traditionally served along side 
 meat dishes, and is an absolute must at holiday gatherings. It is served with an accompanying
 creole garlic sauce.
 {% endblock %}
-
+<!-- Unordered list of ingredients -->
 {% block ul2 %}
 <ul>
     <li>3lbs of yucca, cut into 2" pieces</li>
@@ -51,7 +78,7 @@ creole garlic sauce.
     <li>1/2C olive oil</li>
 </ul> 
 {% endblock %}
-
+<!-- Ordered list of directions -->
 {% block ol2 %}
 <ol>
     <li>Place yuca in a pot with 1T of salt and water to cover. Bring the yuca to a boil,
@@ -72,29 +99,30 @@ creole garlic sauce.
 {% endblock %}
 
 
-
-{% block recipename3 %} Platanós Maduros (Ripe Plantains) {% endblock %}
-
+<!-- recipe 3 -->
+{% block recipename3 %} Platanós Maduros (Fried Sweet Ripe Plantains) {% endblock %}
+<!-- recipe information -->
+{% block info3 %} No Cuban table would be complete without some form of plantains on it. This dish
+features the plantains when they are so ripe, they are spotted all over with black. This leaves the 
+plantain very soft and sweet. When gently fried on each side, the result is delicious. Golden brown
+on the outide, soft and sweet on the inside.
+{% endblock %}
+<!-- unordere list of recipe ingrdients -->
 {% block ul3 %}
 <ul>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
+    <li>2 ripe yellow plantains with black spots</li>
+    <li>1 cup vegetable oil for frying</li>
 </ul> 
 {% endblock %}
-
+<!-- ordered list of recipe instructions -->
 {% block ol3 %}
 <ol>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
+    <li>Peel the plantain and cut into 1" slices.</li>
+    <li>In a frying pan, heat oil over medium heat.</li>
+    <li>Add the slices of plantains to the oil carefully, and cook each side until golden
+        brown, 2-3 minutes.
+    </li>
+    <li>Remove from the oil, and place on a paper towel lined plate to remove excess grease.</li>
+    <li>Serve Immediately</li>
 </ol>
 {% endblock %}

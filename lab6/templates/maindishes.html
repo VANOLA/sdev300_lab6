@@ -1,14 +1,25 @@
+<!--
+    maindishes.html
+    By: Vanessa Arreola
+    November 25, 2021
+    SDEV 300
+  -->
+
+  <!-- Inherit layout from layout.html -->
 {% extends "layout.html" %}
 
+<!-- Inserts image -->
 {% block image %} <img class="image" src="static/buildings.jpg" alt="Havana Buildings"> {% endblock %}
 
-{% block recipename1 %} Fricasé de Pollo (Chicken Fricaseé) {% endblock %}
 
+<!-- Fill in all the blocks from layout.html for each recipe -->
+{% block recipename1 %} Fricasé de Pollo (Chicken Fricaseé) {% endblock %}
+<!-- recipe information -->
 {% block info %} This recipe is a delicious chicken stew. It came to Cuba from France
 by way of Haiti. Although French chicken Fricaseé is made in a white 
 sauce, Cuban Fricasé is made in a blend of sweet and sour citrus juices.
 {% endblock %} 
-
+<!-- Unordered list of ingredients -->
 {% block ul1 %}
 <h4>Marinade</h4>
 <ul>
@@ -33,7 +44,7 @@ sauce, Cuban Fricasé is made in a blend of sweet and sour citrus juices.
     <li>1/4 cup manzanilla green olives</li>
 </ul>
 {% endblock %}
-
+<!-- Ordered list of ingredients -->
 {% block ol1 %}
 <ol>
     <li>To prepare marinade, use a mortar and pestle to mash the garlic and 
@@ -56,13 +67,13 @@ sauce, Cuban Fricasé is made in a blend of sweet and sour citrus juices.
 
 
 {% block recipename2 %} Ajiaco Criollo con Casabe (Creole Stew and Yucca Flatbread) {% endblock %}
-
+<!-- recipe information -->
 {% block info2 %} 
 Ajiaco is the oldest known Cuban recipe. It can be found in 16th century colonial documents and 
 cooking manuals. It makes use of the abundant roots found in Cuban agriculture. It is a hearty Stew
 typically served with yucca flatbread, known as casabe.
 {% endblock %}
-
+<!-- Unordered list of ingredients -->
 {% block ul2 %}
 <ul>
     <li>1/2lb tasajo (smoked dried beef)</li>
@@ -81,7 +92,7 @@ typically served with yucca flatbread, known as casabe.
     <li>1/2 cup sour orange juice</li>
 </ul> 
 {% endblock %}
-
+<!-- Ordered list of ingredients -->
 {% block ol2 %}
 <ol>
     <li>Soak the tasajo for 8 hours to remove the salt. Change the water twice. Drain and rinse.</li>
@@ -106,13 +117,13 @@ typically served with yucca flatbread, known as casabe.
 
 
 {% block recipename3 %} Quimbombó con Platano (Okra Stew with Plantain Dumplings) {% endblock %}
-
+<!-- recipe information -->
 {% block info3 %} The name of this recipe, Quimbombó, can refer to okra vegetables, or the stew they 
 are featured in. Quimbombó is a traditional Cuban recipe. Although okras are native to easter Africa,
 they were brought to Cuba in the 16th century slave trade. Chicken is first poached then marinaded
 before being simmered with tomato puree and white wine to cut through the mucilage released by the okra.
 {% endblock %}
-
+<!-- Unordered list of ingredients -->
 {% block ul3 %}
 <ul>
     <li>8 cups of chicken stock</li>
@@ -129,7 +140,7 @@ before being simmered with tomato puree and white wine to cut through the mucila
     <li>3 yellow plantains, cut into 1" rounds</li>
 </ul> 
 {% endblock %}
-
+<!-- Ordered list of ingredients -->
 {% block ol3 %}
 <ol>
     <li>Poach the chicken in the stock for 20-25 minutes over medium heat. Allow the chicken to cool 

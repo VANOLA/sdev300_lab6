@@ -1,6 +1,81 @@
-{% extends "layout.html" %}
-{% block content %}
-    <h2>About</h2>
-    <h3>History</h3>
-    <h3>Influences</h3>
-{% endblock content %}
+<!--
+    maindishes.html
+    By: Vanessa Arreola
+    November 25, 2021
+    SDEV 300
+  -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="static/main.css"> 
+        {% if title %}
+            <title>{{ title }}</title>
+        {% endif %}
+    </head>
+    <body>
+        <div>
+            <p>
+            <a href="/home">Home</a>
+            <a href="/maindishes">Main Dishes</a>
+            <a href="sides">Side Dishes</a>
+            </p>
+        </div>
+        <hr>
+
+        {% if heading %}
+            <h1>{{ heading }}</h1>
+        {% endif %}
+        <img class="image" src="static/carbuilding.jpg" alt="Havana Buildings">
+        <h2>About</h2>
+        <h3>History and Influences</h3>
+        <p>Cuba is an island about 90 miles from the Miami coast. It was both the first and last 
+            Spanish colony in the area. What makes Cuban cuisine so special is that it is a direct
+            result of Cuba's history. Of course, having been a Spanish colony, Cuban cuisine is heavily
+            influenced by Spanish cuisine, specifically, the Andalucian region. It is a blend of Taino
+            foods and Spanish, African, and Caribbean cuisines. 
+        </p>
+        <p>During the Colonial era, Havana was a very important trading port. The Spanish brough over
+            cattle and pigs which was incorporated into the foods. When slavery was outlawed, large 
+            groups of Chinese indentured laborers were brough from China to do the labor. This had a 
+            noteworty impact on Cuban cusine. Perhaps most notably, the introduction of rice which is 
+            now a Cuban staple and served at almost every dinner.
+        </p>
+        <p>After the Cuban revolution and after Cuba was cut off from its source of imports, they had 
+            to find other sources to keep the economy going. The island strengthened ties with the Soviet
+            Union and new foods were introduced into the Cuban diet, including wheat, pasta, and yogurt. Where
+            pork used to be the main food, thanks to the Spanish, now chicken became more prominent. Beef almost
+            completely disappeared from the Cuban diet. In Miami, however, the Cuban food is heavily influenced
+            by American cuisine.
+        </p>
+        <h3>Cuban Staples</h3>
+        <p>Because of Cuba's tropical climate, tropical fruits and root vegetables are grown in abundance.
+            These have heavily influenced Cuban cuisine. Starchy foods such as yuca, taro, and plantains play 
+            a central role in the Cuban diet. For instance, the dish known as tostones, consists of flattened, 
+            fried green plantains, an African dish that is a remnant of the influence the slave trade had on the 
+            island's cuisine. 
+        </p>
+        <p>Rice is another staple in Cuban cuisine. This is due to the Chinese influence on the Cuban diet.
+            Many meals are always served with rice on the side. Dishes such as arroz con pollo, and moros y
+            cristianos are dishes which feature rice as a main ingredient.
+        </p>
+        <p>This next item is not a staple, but a method of cooking know as <i>la caja china</i>, or The
+            Chinese Box. It is a method of cooking an entire pork, traditionally done at parties and holidays.
+            Cubans learned this method of cooking from the Chinese laborers. It consists of a makeshift wooden
+            box which places the fire on the top. This is an efficient method of cooking, and leaves the meat tender.
+        </p>
+        <h3>Further Reading</h3>
+        <p>
+            <ul>
+                <li><a href="https://www.196flavors.com/category/continent/americas/caribbean/cuba/">A World of Flavors</a>
+                    is a great website to learn about the historical and cultural significance of many Cuban dishes, along
+                    with plenty of recipes and photos.</li>
+                <li><a href="https://www.thespruceeats.com/cuban-food-profile-2137859">The Spruce Eats</a> 
+                also has a great article on the history and influences of Cuban cuisine.</li>
+                <li><a href="https://www.bbc.com/news/world-latin-america-19576144">Cuba Profile Timeline</a> 
+                    is a timeline of key events in Cuban history. Many of these events affected Cuban cuisine.</li>
+            </ul>
+        </p>
+        <p>{{ date_time }}</p>
+    </body>
+</html>

@@ -1,13 +1,22 @@
+<!--
+    layout.html
+    By: Vanessa Arreola
+    November 25, 2021
+    SDEV 300
+  -->
 <!DOCTYPE html>
 <html>
     <head>
-        {% if title %}
+        <meta charset="utf-8">
+        <!-- Logic to pass a title if one is provided -->
+        {% if title %}  
             <title>{{ title }}</title>
         {% endif %}
          <link rel="stylesheet" href="static/main.css?q=12805497802">      
     </head>
 
     <body>
+        <!-- Menu bar -->
         <div>
             <p>
             <a href="/home">Home</a>
@@ -16,16 +25,20 @@
             </p>
         </div>
         <hr>
-
+        <!-- Logic to pass a heading if one is provided -->
         {% if heading %}
             <h1>{{ heading }}</h1>
         {% endif %}
 
+        <!-- Space to add an image on the child html doc -->
         <div>
             {% block image %} {% endblock %}
         </div>
 
+        <!-- Template for the recipes on each child html page. It includes blocks for the child 
+        pages to add their own content -->
         <div class="recipenames">
+            <!-- recipe 1 -->
             <h2> {% block recipename1 %} {% endblock %}</h2>
             <p> {% block info %} {% endblock %} </p>
             <h3>Ingredients</h3>
@@ -39,6 +52,7 @@
                 {% endblock %}
             </div>
 
+            <!-- recipe 2 -->
             <h2> {% block recipename2 %} {% endblock %}</h2>
             <p> {% block info2 %} {% endblock %} </p>
             <h3>Ingredients</h3>
@@ -52,6 +66,7 @@
                 {% endblock %}
             </div>
 
+            <!-- recipe 3 -->
             <h2> {% block recipename3 %} {% endblock %}</h2>
             <p> {% block info3 %} {% endblock %} </p>
             <h3>Ingredients</h3>
