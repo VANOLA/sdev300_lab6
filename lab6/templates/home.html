@@ -9,11 +9,14 @@
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" href="static/main.css"> 
+        <!-- Logic to pass a title if one is provided -->
         {% if title %}
             <title>{{ title }}</title>
         {% endif %}
     </head>
+
     <body>
+        <!-- Menu bar -->
         <div>
             <p>
             <a href="/home">Home</a>
@@ -22,11 +25,14 @@
             </p>
         </div>
         <hr>
-
+        <!-- Logic to pass a heading if one is provided -->
         {% if heading %}
             <h1>{{ heading }}</h1>
         {% endif %}
+        <!-- Inserts image -->
         <img class="image" src="static/carbuilding.jpg" alt="Havana Buildings">
+
+
         <h2>About</h2>
         <h3>History and Influences</h3>
         <p>Cuba is an island about 90 miles from the Miami coast. It was both the first and last 
@@ -48,6 +54,8 @@
             completely disappeared from the Cuban diet. In Miami, however, the Cuban food is heavily influenced
             by American cuisine.
         </p>
+
+
         <h3>Cuban Staples</h3>
         <p>Because of Cuba's tropical climate, tropical fruits and root vegetables are grown in abundance.
             These have heavily influenced Cuban cuisine. Starchy foods such as yuca, taro, and plantains play 
@@ -64,6 +72,8 @@
             Cubans learned this method of cooking from the Chinese laborers. It consists of a makeshift wooden
             box which places the fire on the top. This is an efficient method of cooking, and leaves the meat tender.
         </p>
+
+
         <h3>Further Reading</h3>
         <p>
             <ul>
@@ -76,6 +86,7 @@
                     is a timeline of key events in Cuban history. Many of these events affected Cuban cuisine.</li>
             </ul>
         </p>
+        <!-- Display the date and time string passed from the .py file -->
         <p>{{ date_time }}</p>
     </body>
 </html>
